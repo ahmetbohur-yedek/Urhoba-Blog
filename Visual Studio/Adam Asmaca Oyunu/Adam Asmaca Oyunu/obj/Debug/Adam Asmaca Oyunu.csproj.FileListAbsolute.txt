@@ -1,0 +1,9 @@
+C:\Users\ahmet\source\repos\Adam Asmaca Oyunu\Adam Asmaca Oyunu\bin\Debug\Adam Asmaca Oyunu.exe.config
+C:\Users\ahmet\source\repos\Adam Asmaca Oyunu\Adam Asmaca Oyunu\bin\Debug\Adam Asmaca Oyunu.exe
+C:\Users\ahmet\source\repos\Adam Asmaca Oyunu\Adam Asmaca Oyunu\bin\Debug\Adam Asmaca Oyunu.pdb
+C:\Users\ahmet\source\repos\Adam Asmaca Oyunu\Adam Asmaca Oyunu\obj\Debug\Adam Asmaca Oyunu.csprojAssemblyReference.cache
+C:\Users\ahmet\source\repos\Adam Asmaca Oyunu\Adam Asmaca Oyunu\obj\Debug\Adam_Asmaca_Oyunu.Form1.resources
+C:\Users\ahmet\source\repos\Adam Asmaca Oyunu\Adam Asmaca Oyunu\obj\Debug\Adam_Asmaca_Oyunu.Properties.Resources.resources
+C:\Users\ahmet\source\repos\Adam Asmaca Oyunu\Adam Asmaca Oyunu\obj\Debug\Adam Asmaca Oyunu.csproj.GenerateResource.cache
+C:\Users\ahmet\source\repos\Adam Asmaca Oyunu\Adam Asmaca Oyunu\obj\Debug\Adam Asmaca Oyunu.exe
+C:\Users\ahmet\source\repos\Adam Asmaca Oyunu\Adam Asmaca Oyunu\obj\Debug\Adam Asmaca Oyunu.pdb

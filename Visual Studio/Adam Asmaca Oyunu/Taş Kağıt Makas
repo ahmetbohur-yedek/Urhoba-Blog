@@ -1,0 +1,26 @@
+public void single_tas_kagit_makas(int secim_user)
+        {
+            Random rand = new Random();
+            int secim_pc = rand.Next(0, 2 + 1);
+
+            string[] rsp = { "Taş", "Kağıt", "Makas" };
+
+            // Taş = 0 Kağıt = 1 Makas = 2
+           if(secim_user == 0 && secim_pc == 0 || secim_user == 1 && secim_pc == 1 || secim_user == 2 && secim_pc == 2)
+            {
+                label3.Text = "Berabere kaldınız" + "\n Bilgisayar : " + rsp[secim_pc] + "\n Sen : " + rsp[secim_user];
+            }
+            else if(secim_user == 0 && secim_pc == 2 || secim_user == 1 && secim_pc == 0 || secim_user == 2 && secim_pc == 1)
+            {
+                label3.Text = "Kazandınız" + "\n Bilgisayar : " + rsp[secim_pc] + "\n Sen : " + rsp[secim_user];
+                single_score++;
+                label4.Text = "Puan : " + single_score.ToString();
+            }
+            else
+            {
+                label3.Text = "Kaybettiniz" +  "\n Bilgisayar : " + rsp[secim_pc] + "\n Sen : " + rsp[secim_user];
+                single_score--;
+                label4.Text = "Puan : " + single_score.ToString();
+            }
+           
+        }

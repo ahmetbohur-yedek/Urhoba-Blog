@@ -1,0 +1,18 @@
+C:\Users\ahmet\source\repos\Tas Kagit Makas Oyunu\Tas Kagit Makas Oyunu\bin\Debug\Tas Kagit Makas Oyunu.exe.config
+C:\Users\ahmet\source\repos\Tas Kagit Makas Oyunu\Tas Kagit Makas Oyunu\bin\Debug\Tas Kagit Makas Oyunu.exe
+C:\Users\ahmet\source\repos\Tas Kagit Makas Oyunu\Tas Kagit Makas Oyunu\bin\Debug\Tas Kagit Makas Oyunu.pdb
+C:\Users\ahmet\source\repos\Tas Kagit Makas Oyunu\Tas Kagit Makas Oyunu\obj\Debug\Tas Kagit Makas Oyunu.csprojAssemblyReference.cache
+C:\Users\ahmet\source\repos\Tas Kagit Makas Oyunu\Tas Kagit Makas Oyunu\obj\Debug\Tas_Kagit_Makas_Oyunu.Form1.resources
+C:\Users\ahmet\source\repos\Tas Kagit Makas Oyunu\Tas Kagit Makas Oyunu\obj\Debug\Tas_Kagit_Makas_Oyunu.Properties.Resources.resources
+C:\Users\ahmet\source\repos\Tas Kagit Makas Oyunu\Tas Kagit Makas Oyunu\obj\Debug\Tas Kagit Makas Oyunu.csproj.GenerateResource.cache
+C:\Users\ahmet\source\repos\Tas Kagit Makas Oyunu\Tas Kagit Makas Oyunu\obj\Debug\Tas Kagit Makas Oyunu.exe
+C:\Users\ahmet\source\repos\Tas Kagit Makas Oyunu\Tas Kagit Makas Oyunu\obj\Debug\Tas Kagit Makas Oyunu.pdb
+C:\Users\ahmet\Documents\GitHub\Urhoba-Blog\Visual Studio\Taş Kağıt Makas Oyunu\Tas Kagit Makas Oyunu\Tas Kagit Makas Oyunu\bin\Debug\Tas Kagit Makas Oyunu.exe.config
+C:\Users\ahmet\Documents\GitHub\Urhoba-Blog\Visual Studio\Taş Kağıt Makas Oyunu\Tas Kagit Makas Oyunu\Tas Kagit Makas Oyunu\bin\Debug\Tas Kagit Makas Oyunu.exe
+C:\Users\ahmet\Documents\GitHub\Urhoba-Blog\Visual Studio\Taş Kağıt Makas Oyunu\Tas Kagit Makas Oyunu\Tas Kagit Makas Oyunu\bin\Debug\Tas Kagit Makas Oyunu.pdb
+C:\Users\ahmet\Documents\GitHub\Urhoba-Blog\Visual Studio\Taş Kağıt Makas Oyunu\Tas Kagit Makas Oyunu\Tas Kagit Makas Oyunu\obj\Debug\Tas Kagit Makas Oyunu.csprojAssemblyReference.cache
+C:\Users\ahmet\Documents\GitHub\Urhoba-Blog\Visual Studio\Taş Kağıt Makas Oyunu\Tas Kagit Makas Oyunu\Tas Kagit Makas Oyunu\obj\Debug\Tas_Kagit_Makas_Oyunu.Form1.resources
+C:\Users\ahmet\Documents\GitHub\Urhoba-Blog\Visual Studio\Taş Kağıt Makas Oyunu\Tas Kagit Makas Oyunu\Tas Kagit Makas Oyunu\obj\Debug\Tas_Kagit_Makas_Oyunu.Properties.Resources.resources
+C:\Users\ahmet\Documents\GitHub\Urhoba-Blog\Visual Studio\Taş Kağıt Makas Oyunu\Tas Kagit Makas Oyunu\Tas Kagit Makas Oyunu\obj\Debug\Tas Kagit Makas Oyunu.csproj.GenerateResource.cache
+C:\Users\ahmet\Documents\GitHub\Urhoba-Blog\Visual Studio\Taş Kağıt Makas Oyunu\Tas Kagit Makas Oyunu\Tas Kagit Makas Oyunu\obj\Debug\Tas Kagit Makas Oyunu.exe
+C:\Users\ahmet\Documents\GitHub\Urhoba-Blog\Visual Studio\Taş Kağıt Makas Oyunu\Tas Kagit Makas Oyunu\Tas Kagit Makas Oyunu\obj\Debug\Tas Kagit Makas Oyunu.pdb

@@ -1,0 +1,9 @@
+C:\Users\ahmet\source\repos\Nesne Hareket Ettirme\Nesne Hareket Ettirme\bin\Debug\Nesne Hareket Ettirme.exe.config
+C:\Users\ahmet\source\repos\Nesne Hareket Ettirme\Nesne Hareket Ettirme\bin\Debug\Nesne Hareket Ettirme.exe
+C:\Users\ahmet\source\repos\Nesne Hareket Ettirme\Nesne Hareket Ettirme\bin\Debug\Nesne Hareket Ettirme.pdb
+C:\Users\ahmet\source\repos\Nesne Hareket Ettirme\Nesne Hareket Ettirme\obj\Debug\Nesne Hareket Ettirme.csprojAssemblyReference.cache
+C:\Users\ahmet\source\repos\Nesne Hareket Ettirme\Nesne Hareket Ettirme\obj\Debug\Nesne_Hareket_Ettirme.Form1.resources
+C:\Users\ahmet\source\repos\Nesne Hareket Ettirme\Nesne Hareket Ettirme\obj\Debug\Nesne_Hareket_Ettirme.Properties.Resources.resources
+C:\Users\ahmet\source\repos\Nesne Hareket Ettirme\Nesne Hareket Ettirme\obj\Debug\Nesne Hareket Ettirme.csproj.GenerateResource.cache
+C:\Users\ahmet\source\repos\Nesne Hareket Ettirme\Nesne Hareket Ettirme\obj\Debug\Nesne Hareket Ettirme.exe
+C:\Users\ahmet\source\repos\Nesne Hareket Ettirme\Nesne Hareket Ettirme\obj\Debug\Nesne Hareket Ettirme.pdb

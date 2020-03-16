@@ -1,0 +1,9 @@
+C:\Users\ahmet\source\repos\Obje Mausu Takip Etme\Obje Mausu Takip Etme\bin\Debug\Obje Mausu Takip Etme.exe.config
+C:\Users\ahmet\source\repos\Obje Mausu Takip Etme\Obje Mausu Takip Etme\bin\Debug\Obje Mausu Takip Etme.exe
+C:\Users\ahmet\source\repos\Obje Mausu Takip Etme\Obje Mausu Takip Etme\bin\Debug\Obje Mausu Takip Etme.pdb
+C:\Users\ahmet\source\repos\Obje Mausu Takip Etme\Obje Mausu Takip Etme\obj\Debug\Obje_Mausu_Takip_Etme.Form1.resources
+C:\Users\ahmet\source\repos\Obje Mausu Takip Etme\Obje Mausu Takip Etme\obj\Debug\Obje_Mausu_Takip_Etme.Properties.Resources.resources
+C:\Users\ahmet\source\repos\Obje Mausu Takip Etme\Obje Mausu Takip Etme\obj\Debug\Obje Mausu Takip Etme.csproj.GenerateResource.cache
+C:\Users\ahmet\source\repos\Obje Mausu Takip Etme\Obje Mausu Takip Etme\obj\Debug\Obje Mausu Takip Etme.exe
+C:\Users\ahmet\source\repos\Obje Mausu Takip Etme\Obje Mausu Takip Etme\obj\Debug\Obje Mausu Takip Etme.pdb
+C:\Users\ahmet\source\repos\Obje Mausu Takip Etme\Obje Mausu Takip Etme\obj\Debug\Obje Mausu Takip Etme.csprojAssemblyReference.cache

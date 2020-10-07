@@ -225,7 +225,7 @@ Ins.TakipEttikleriniGoster("urhoba",True)
 Ins.TakipEtmeyenler()
 Ins.TakiptenCik("urhoba")
 Ins.TakipEt("urhoba")
-
+Ins.TarayiciKapat()
 
 
 print(input())

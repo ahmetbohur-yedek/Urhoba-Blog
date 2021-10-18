@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #urhoba_main{
+            width: 90%;
+            display: block;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        #urhoba_main h1{
+            display: block;
+            text-align: center;
+        }
+    
+       .urhoba_inputArea{
+            width: 90%;
+            margin: auto;
+       }
+       .urhoba_inputArea p{
+           font-weight: bold;
+           font-size: 18px;
+       }
+       .urhoba_inputArea select, input, button{
+            width: 100%;
+            height: 30px;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+       }
+    </style>
+    <div id="urhoba_main">
+        <img border="0" data-original-height="350" data-original-width="1050" height="106" src="https://1.bp.blogspot.com/-4btLm9V1Pq0/Xh8x74xgXLI/AAAAAAAAE0A/IKl58b8z2UIRb5DFdNzSYiWNFqov38CuACLcBGAsYHQ/s320/Urhoba%2BLogosm.png" width="320" />
+        <h1>Bilgisayar Ölçü Birimi Çevirici</h1>
+        <div class="urhoba_inputArea">
+            <p>Çevirilecek Miktar</p>
+            <input type="number" id="urhoba_amount" placeholder="0000">
+        </div>
+        <div class="urhoba_inputArea">
+            <p>Hangi Birimden</p>
+            <select id="urhoba_selectedUnit">
+                <option value="0" >Bayt</option>
+                <option value="1" >Kilobayt</option>
+                <option value="2" >Megabayt</option>
+                <option value="3" >Gigabayt</option>
+                <option value="4" >Terabayt</option>
+                <option value="5" >Petabayt</option>
+                <option value="6" >Exabayt</option>
+                <option value="7" > Bit</option>
+                <option value="8" >Kilobit</option>
+                <option value="9" >Megabit</option>
+                <option value="10" >Gigabit</option>
+                <option value="11" >Terabit</option>
+                <option value="12" >Petabit</option>
+                <option value="13" >Exabit</option>
+            </select>
+        </div>
+
+        <div class="urhoba_inputArea">
+            <p>Hangi Birime</p>
+            <select id="urhoba_convertedUnit">
+                <option value="0" >Bayt</option>
+                <option value="1" >Kilobayt</option>
+                <option value="2" >Megabayt</option>
+                <option value="3" >Gigabayt</option>
+                <option value="4" >Terabayt</option>
+                <option value="5" >Petabayt</option>
+                <option value="6" >Exabayt</option>
+                <option value="7" > Bit</option>
+                <option value="8" >Kilobit</option>
+                <option value="9" >Megabit</option>
+                <option value="10" >Gigabit</option>
+                <option value="11" >Terabit</option>
+                <option value="12" >Petabit</option>
+                <option value="13" >Exabit</option>
+            </select>
+        </div>
+    
+        <div class="urhoba_inputArea">
+            <p>
+                Çevir
+            </p>
+            <button type="submit" onclick="Calculate()">
+                Çevir
+            </button>
+        </div>
+
+        <div class="urhoba_inputArea" id="urhoba_result">
+            <p>İşlem Sonucu</p>
+        </div>
+    </div>
+
+    <script>
+
+            var amount;
+            var selectedUnit;
+            var convertedUnit;
+
+        function Calculate(){
+            amount = document.getElementById("urhoba_amount").value;
+            selectedUnit = document.getElementById("urhoba_selectedUnit").value;
+            convertedUnit = document.getElementById("urhoba_convertedUnit").value;
+
+            if(selectedUnit == 0){
+               ShowResult( BaytExchange(amount));
+            }
+            if(selectedUnit == 1){
+               ShowResult( KilobaytExchange());
+            }
+            if(selectedUnit == 2){
+                ShowResult( MegabaytExchange());
+            }
+            if(selectedUnit == 3){
+                ShowResult( GigabaytExchange());
+            }
+            if(selectedUnit == 4){
+                ShowResult(TerabayExchange());
+            }
+            if(selectedUnit == 5){
+                ShowResult(PetabaytExchange());
+            }
+            if(selectedUnit == 6){
+                ShowResult(ExabaytExchange());
+            }
+            if(selectedUnit == 7){
+                ShowResult(BitExchange());
+            }
+            if(selectedUnit == 8){
+                ShowResult(KilobitExchange());
+            } 
+            if(selectedUnit == 9){
+                ShowResult(MegabitExchange());
+            } 
+            if(selectedUnit == 10){
+                ShowResult(GigabitExchange());
+            }
+            if(selectedUnit == 11){
+                ShowResult(TerabitExchange());
+            }
+            if(selectedUnit == 12){
+                ShowResult(PetabitExchange());
+            }
+            if(selectedUnit == 13){
+                ShowResult(ExabitExchange());
+            }
+        }
+       
+ 
+        function BaytExchange(_amount){
+            var baytValue = [1, 1024, 1048576, 1073741824, 1099511627776, 1125899906842620, 1152921504606850000, 0.125, 125, 125000,125000000, 125000000000, 125000000000000, 125000000000000000];
+            var result = _amount / baytValue[convertedUnit];
+            return result;
+        }
+    
+        function KilobaytExchange(){
+            var result = BaytExchange(amount * 1024);
+            return result;
+        }
+
+        function MegabaytExchange(){
+            var result = BaytExchange(amount * 1048576);
+            return result;
+        }
+        function GigabaytExchange(){
+            var result = BaytExchange(amount * 1073741824);
+            return result;
+        }
+
+        function TerabayExchange(){
+            var result = BaytExchange(amount * 1099511627776);
+            return result;
+        }
+
+        function PetabaytExchange(){
+            var result = BaytExchange(amount * 1125899906842620);
+            return result;
+        }
+        function ExabaytExchange(){
+            var result = BaytExchange(amount * 1152921504606850000);
+            return result;
+        }
+
+        function BitExchange(){
+            var result = BaytExchange(amount * 0.125);
+            return result;
+        }
+
+        function KilobitExchange(){
+            var result = BaytExchange(amount * 125);
+            return result;
+        }
+
+        function MegabitExchange(){
+            var result = BaytExchange(amount * 125000);
+            return result;
+        }
+
+        function GigabitExchange(){
+            var result = BaytExchange(amount * 125000000);
+            return result;
+        }
+       
+        function TerabitExchange(){
+            var result = BaytExchange(amount * 125000000000);
+            return result;
+        }
+
+        function PetabitExchange(){
+            var result = BaytExchange(amount * 125000000000000);
+            return result;
+        }
+
+        function ExabitExchange(){
+            var result = BaytExchange(amount *  125000000000000000);
+            return result;
+        }
+
+        function ShowResult(_result){
+            document.getElementById("urhoba_result").innerHTML = "<p>İşlem Sonucu</p><p>" + _result + "</p>";
+        }
+    </script>
+</body>
+</html>

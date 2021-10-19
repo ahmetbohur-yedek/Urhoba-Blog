@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UrhobA - Bilgisayar Ölçü Birimi Çevirici</title>
 </head>
 <body>
     <style>
@@ -222,8 +222,9 @@
         }
 
         function ShowResult(_result){
-            document.getElementById("urhoba_result").innerHTML = "<p>İşlem Sonucu</p><p>" + _result + "</p>";
+            document.getElementById("urhoba_result").innerHTML = "<p>İşlem Sonucu</p><p>" + _result + "</p><p>Detaylı Olarak</p><p>"+ _result.toFixed(24) +"</p>";
         }
+
     </script>
 </body>
 </html>

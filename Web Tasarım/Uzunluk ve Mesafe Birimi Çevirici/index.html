@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrhobA - Uzunluk ve Mesafe Ölçü Birimleri Çevirici / Dönüştürücü</title>
+</head>
+<body>
+    <style>
+        #urhoba_main{
+            width: 100%;
+            display: block;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        #urhoba_main h1{
+            display: block;
+            text-align: center;
+        }
+    
+       .urhoba_inputArea{
+            width: 90%;
+            margin: auto;
+       }
+       .urhoba_inputArea p{
+           font-weight: bold;
+           font-size: 18px;
+       }
+       .urhoba_inputArea select, input, button{
+            width: 100%;
+            height: 30px;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+       }
+    </style>
+    <div id="urhoba_main"><div style="text-align: center;"><img alt="Uzunluk ve Mesafe Ölçü Birimleri Çevirici / Dönüştürücü" border="0" data-original-height="350" data-original-width="1050" height="106" src="https://1.bp.blogspot.com/-4btLm9V1Pq0/Xh8x74xgXLI/AAAAAAAAE0A/IKl58b8z2UIRb5DFdNzSYiWNFqov38CuACLcBGAsYHQ/w320-h106/Urhoba%2BLogosm.png" title="Uzunluk ve Mesafe Ölçü Birimleri Çevirici / Dönüştürücü" width="320" /></div>
+        <h1>Uzunluk ve Mesafe Ölçü Birimleri Çevirici / Dönüştürücü</h1>
+        <div class="urhoba_inputArea">
+            <p>Çevirilecek Miktar</p>
+            <input id="urhoba_amount" type="number" />
+        </div>
+        <div class="urhoba_inputArea">
+            <p>Hangi Birimden</p>
+            <select id="urhoba_selectedUnit">
+                <option value="0">Kilometre </option>
+                <option value="1">Hektometre </option>
+                <option value="2">Dekametre </option>
+                <option value="3">Metre </option>
+                <option value="4">Desimetre </option>
+                <option value="5">Santimetre </option>
+                <option value="6">Milimetre </option>
+                <option value="7">Nanometre </option>
+                <option value="8">Mikrometre </option>
+                <option value="9">Angstrom </option>
+                <option value="10">İnç </option>
+                <option value="11">Fit </option>
+                <option value="12">Yarda </option>
+                <option value="13">Mil </option>
+                <option value="14">Deniz Mili</option>
+                <option value="15">Pika </option>
+                <option value="16">Punto </option>
+                <option value="17">Astronomik Birim </option>
+                <option value="18">Işık Yılı</option>
+            </select>
+        </div>
+
+        <div class="urhoba_inputArea">
+            <p>Hangi Birime</p>
+            <select id="urhoba_convertedUnit">
+                <option value="0">Kilometre </option>
+                <option value="1">Hektometre </option>
+                <option value="2">Dekametre </option>
+                <option value="3">Metre </option>
+                <option value="4">Desimetre </option>
+                <option value="5">Santimetre </option>
+                <option value="6">Milimetre </option>
+                <option value="7">Nanometre </option>
+                <option value="8">Mikrometre </option>
+                <option value="9">Angstrom </option>
+                <option value="10">İnç </option>
+                <option value="11">Fit </option>
+                <option value="12">Yarda </option>
+                <option value="13">Mil </option>
+                <option value="14">Deniz Mili</option>
+                <option value="15">Pika </option>
+                <option value="16">Punto </option>
+                <option value="17">Astronomik Birim </option>
+                <option value="18">Işık Yılı</option>
+            </select>
+        </div>
+    
+        <div class="urhoba_inputArea">
+            <p>
+                Çevir
+            </p>
+            <button onclick="Calculate()" type="submit">
+                Çevir
+            </button>
+        </div>
+
+        <div class="urhoba_inputArea" id="urhoba_result">
+            <p>İşlem Sonucu</p>
+        </div>
+    </div>
+
+    <script>
+
+            var amount;
+            var selectedUnit;
+            var convertedUnit;
+
+        function Calculate(){
+            amount = document.getElementById("urhoba_amount").value;
+            selectedUnit = document.getElementById("urhoba_selectedUnit").value;
+            convertedUnit = document.getElementById("urhoba_convertedUnit").value;
+            if(selectedUnit == 0){
+                ShowResult(KmExchange());
+            }
+            if(selectedUnit == 1){
+                ShowResult(HektoMetreExchange());
+            }
+            if(selectedUnit == 2){
+                ShowResult(DekaMetreExchange());
+            }
+            if(selectedUnit == 3){
+               ShowResult(MetreExchange(amount));
+            }
+            if(selectedUnit == 4){
+                ShowResult(DesiMetreExchange());
+            }
+            if(selectedUnit == 5){
+                ShowResult(SantiMetreExchange());
+            }
+            if(selectedUnit == 6){
+                ShowResult(MiliMetreExchange());
+            }
+            if(selectedUnit == 7){
+                ShowResult(NanoMetreExchange());
+            }
+            if(selectedUnit == 8){
+                ShowResult(MikroMetreExchange());
+            }
+            if(selectedUnit == 9){
+                ShowResult(AngstromExchange());
+            }
+
+            if(selectedUnit == 10){
+                ShowResult(InchExchange());
+            }
+
+            if(selectedUnit == 11){
+                ShowResult(FitExchange());
+            }
+            if(selectedUnit == 12){
+                ShowResult(YardaExchange());
+            }
+            if(selectedUnit == 13){
+                ShowResult(MilExchange);
+            }
+            if(selectedUnit == 14){
+                ShowResult(DenizMiliExchange());
+            }
+            if(selectedUnit == 15){
+                ShowResult(PikaExchange());
+            }
+            if(selectedUnit == 16){
+                ShowResult(PuntoExchange());
+            } 
+            if(selectedUnit == 17){
+                ShowResult(AstroExchange());
+            } 
+            if(selectedUnit == 18){
+                ShowResult(IsikExchange());
+            }
+        }
+       
+        
+      
+        function MetreExchange(_amount){
+            var metreValue = [    
+            1000,   // Kilo Metre
+            100,    // Hekto Metre
+            10,     // Deka Metre
+            1,      // Metre
+            0.1,    // Desi Metre
+            0.01,   // Santi Metre
+            0.001,  // Mili Metre
+            0.000000001,    // Nano Metre
+            0.000001,       // Mikro Metre
+            0.0000000001,   // Angstrom
+            0.0254, // İnç
+            0.3048, // Fit
+            0.9144, // Yarda
+            1609.344, // Mil
+            1852, // Deniz Mili
+            0.004217396, // Pika
+            0.00035, // Punto
+            149597900000, // Astronomik Birim
+            9460730473000000 // Işık Yılı
+            ];
+
+         
+            var result = _amount / metreValue[convertedUnit];
+            return result;
+        }
+    
+        function KmExchange(){
+            var result = MetreExchange(amount * 1000);
+            return result;
+        }
+
+        function HektoMetreExchange(){
+            var result = MetreExchange(amount * 100);
+            return result;
+        }
+
+        function DekaMetreExchange(){
+            var result = MetreExchange(amount * 10);
+            return result;
+        }
+
+        function DesiMetreExchange(){
+            var result = MetreExchange(amount * 0.1);
+            return result;
+        }
+
+        function SantiMetreExchange(){
+            var result = MetreExchange(amount * 0.01);
+            return result;
+        }
+
+        function MiliMetreExchange(){
+            var result = MetreExchange(amount * 0.001);
+            return result;
+        }
+
+        function NanoMetreExchange(){
+            var result = MetreExchange(amount * 0.000000001);
+            return result;
+        }
+
+        function MikroMetreExchange(){
+            var result = MetreExchange(amount * 0.000001);
+            return result;
+        }
+
+        function AngstromExchange(){
+            var result = MetreExchange(amount * 0.0000000001);
+            return result;
+        }
+
+        function InchExchange(){
+            var result = MetreExchange(amount * 0.0254);
+            return result;
+        }
+        
+        function FitExchange(){
+            var result = MetreExchange(amount * 0.3048);
+            return result;
+        }
+
+        function YardaExchange(){
+            var result = MetreExchange(amount * 0.9144);
+            return result;
+        }
+
+        function MilExchange(){
+            var result = MetreExchange(amount * 1609.344);
+            return result;
+        }
+
+        function DenizMiliExchange(){
+            var result = MetreExchange(amount * 1852);
+            return result;
+        }
+
+        function PikaExchange(){
+            var result = MetreExchange(amount * 0.004217396);
+            return result;
+        }
+
+        function PuntoExchange(){
+            var result = MetreExchange(amount * 0.00035);
+            return result;
+        }
+
+        function AstroExchange(){
+            var result = MetreExchange(amount * 149597900000);
+            return result;
+        }
+
+        function IsikExchange(){
+            var result = MetreExchange(amount * 9460730473000000);
+            return result;
+        }
+
+        function ShowResult(_result){
+            document.getElementById("urhoba_result").innerHTML = "<p>İşlem Sonucu</p><p>" + _result + "</p><p>Detaylı olarak</p><p>"+ _result.toFixed(32)+"</p>";
+        }
+
+    
+    </script>
+</body>
+</html>

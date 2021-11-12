@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrhobA - APY Hesaplama Aracı</title>
+</head>
+<body>
+    <style>
+        #urhoba_main{
+            width: 100%;
+            display: block;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        #urhoba_main h1{
+            display: block;
+            text-align: center;
+        }
+    
+       .urhoba_inputArea{
+            width: 90%;
+            margin: auto;
+       }
+       .urhoba_inputArea p{
+           font-weight: bold;
+           font-size: 18px;
+       }
+       .urhoba_inputArea select, input, button{
+            width: 100%;
+            height: 30px;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+       }
+    </style>
+    <div id="urhoba_main"><div style="text-align: center;"><img alt="APY Hesaplama Aracı" border="0" data-original-height="350" data-original-width="1050" height="106" src="https://1.bp.blogspot.com/-4btLm9V1Pq0/Xh8x74xgXLI/AAAAAAAAE0A/IKl58b8z2UIRb5DFdNzSYiWNFqov38CuACLcBGAsYHQ/w320-h106/Urhoba%2BLogosm.png" title="Uzunluk ve Mesafe Ölçü Birimleri Çevirici / Dönüştürücü" width="320" /></div>
+        <h1>APY Hesaplama Aracı</h1>
+        <div class="urhoba_inputArea">
+            <p>Çevirilecek Miktar</p>
+            <input id="urhoba_amount" type="number" />
+        </div>
+        <div class="urhoba_inputArea">
+            <p>Çevirilecek Miktar</p>
+            <input id="urhoba_amount" type="number" />
+        </div>
+        <div class="urhoba_inputArea">
+            <p>
+                Çevir
+            </p>
+            <button onclick="Calculate()" type="submit">
+                Çevir
+            </button>
+        </div>
+
+        <div class="urhoba_inputArea" id="urhoba_result">
+            <p>İşlem Sonucu</p>
+        </div>
+    </div>
+
+    <script>
+
+            var amount;
+            var selectedUnit;
+            var convertedUnit;
+
+        function Calculate(){
+            amount = document.getElementById("urhoba_amount").value;
+        }
+
+        function ShowResult(_result){
+            document.getElementById("urhoba_result").innerHTML = "<p>İşlem Sonucu</p><p>" + _result + "</p><p>Detaylı olarak</p><p>"+ _result.toFixed(32)+"</p>";
+        }
+
+    
+    </script>
+</body>
+</html>

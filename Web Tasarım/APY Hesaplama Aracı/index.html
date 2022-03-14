@@ -34,23 +34,36 @@
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
        }
+       .urhoba_inputArea button{
+           width: 50%;
+           float: left;
+           margin-bottom: 15px;
+       }
     </style>
     <div id="urhoba_main"><div style="text-align: center;"><img alt="APY Hesaplama Aracı" border="0" data-original-height="350" data-original-width="1050" height="106" src="https://1.bp.blogspot.com/-4btLm9V1Pq0/Xh8x74xgXLI/AAAAAAAAE0A/IKl58b8z2UIRb5DFdNzSYiWNFqov38CuACLcBGAsYHQ/w320-h106/Urhoba%2BLogosm.png" title="Uzunluk ve Mesafe Ölçü Birimleri Çevirici / Dönüştürücü" width="320" /></div>
         <h1>APY Hesaplama Aracı</h1>
         <div class="urhoba_inputArea">
-            <p>Çevirilecek Miktar</p>
+            <p>Miktar</p>
             <input id="urhoba_amount" type="number" />
         </div>
         <div class="urhoba_inputArea">
-            <p>Çevirilecek Miktar</p>
-            <input id="urhoba_amount" type="number" />
+            <p>APY Oranı</p>
+            <input id="urhoba_apy" type="number" />
+        </div>
+        <div class="urhoba_inputArea">
+            <p>Gün</p>
+            <input id="urhoba_date" type="number" />
         </div>
         <div class="urhoba_inputArea">
             <p>
-                Çevir
+                Hesapla
             </p>
-            <button onclick="Calculate()" type="submit">
-                Çevir
+            <button onclick="LockedCalc()" type="submit">
+                Sabit Hesapla
+            </button>
+
+            <button onclick="FlexibleCalc()" type="submit">
+                Esnek Hesapla
             </button>
         </div>
 
@@ -60,19 +73,45 @@
     </div>
 
     <script>
+        var amount;
+        var apy;
+        var date;
 
-            var amount;
-            var selectedUnit;
-            var convertedUnit;
-
-        function Calculate(){
+        function FlexibleCalc(){
             amount = document.getElementById("urhoba_amount").value;
+            apy = document.getElementById("urhoba_apy").value;
+            date = document.getElementById("urhoba_date").value;
+
+            var allDayResult = 0;
+            var thisDayResult = 0;
+            var lateDayAmount = Number(amount);
+            while(date > 0){
+                thisDayResult = lateDayAmount * (apy / 100) * (1 / 365);
+                allDayResult += thisDayResult;
+                lateDayAmount = Number(amount) + Number(allDayResult);
+                date--;
+            }
+           ShowFlexResult(allDayResult, lateDayAmount);
         }
 
-        function ShowResult(_result){
-            document.getElementById("urhoba_result").innerHTML = "<p>İşlem Sonucu</p><p>" + _result + "</p><p>Detaylı olarak</p><p>"+ _result.toFixed(32)+"</p>";
+        function LockedCalc(){
+            amount = document.getElementById("urhoba_amount").value;
+            apy = document.getElementById("urhoba_apy").value;
+            date = document.getElementById("urhoba_date").value;
+            
+            var result = amount * (apy / 100) * (date / 365);
+            ShowLockedResult(result);
         }
 
+        function ShowLockedResult(_result){
+            var calc = Number(amount) + Number(_result);
+            document.getElementById("urhoba_result").innerHTML = "<p>Getiri</p><p>" + _result + "</p><p>Detaylı Getiri</p><p>"+ _result.toFixed(32)+"</p>" + "<p>Toplam Miktar</p><p>" + calc + "</p>" ;
+        }
+
+        function ShowFlexResult(_result, _result2){
+            var calc = Number(amount) + Number(_result);
+            document.getElementById("urhoba_result").innerHTML = "<p>Getiri</p><p>" + _result + "</p><p>Detaylı Getiri</p><p>"+ _result.toFixed(32)+"</p>" + "<p>Toplam Miktar</p><p>" + _result2 + "</p>" ;
+        }
     
     </script>
 </body>

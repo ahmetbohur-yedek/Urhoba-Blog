@@ -7,9 +7,9 @@
 #include <ArduinoJson.h>
 #include "urhoba.h"
 
-#define WIFI_SSID "YAZILIM"
-#define WIFI_PASSWORD "imfyazilim12345"
-#define BOT_TOKEN "5864003450:AAFRmdWE233GCjUgBw0pl0z7l_jtqcZt11E"
+#define WIFI_SSID ""
+#define WIFI_PASSWORD ""
+#define BOT_TOKEN ":"
 
 AccountManager accountManager;
 
